@@ -11,7 +11,7 @@
             </div>
             <div class='container'>
                 <span>Created by: {{quote.createdBy}}</span>
-                <div>{{quote.date | dateAgo}}</div>
+                <div>{{quote.date | datePast}}</div>
                 <div class='icon'>
                     <span class="fa fa-thumbs-up" (click)="upVote(i)">{{quote.upVotes}}</span>
                     <span class="fa fa-thumbs-down" (click)="downVote(i)">{{quote.downVotes}}</span>
