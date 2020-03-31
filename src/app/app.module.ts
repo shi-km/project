@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuotesComponent } from './quotes/quotes.component';
+import { QuotesComponent } from './quotes/Quotes.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { TimePastPipe } from './time-past.pipe';
 import { HighlightDirective } from './highlight.directive';
