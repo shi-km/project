@@ -1,0 +1,26 @@
+<div class="container">
+    <div class='card' *ngIf="bestQuote()" appHighlight>
+        {{bestQuote()}}
+    </div>
+    </div>
+    <div class='container' *ngFor='let quote of quotes; let i = index'>
+        <div class='card' *ngIf='quote.isShown' (mouseenter)='quote.handleRemove()' (mouseleave)='quote.handleRemove()'>
+            <div>
+                <button class='btn btn-danger' *ngIf='quote.showRemove' (click)='quote.hide()'>Remove</button>
+                <p class="card-text">{{quote.quote}} <br><em> ~{{quote.author}}</em></p>
+            </div>
+            <div class='container'>
+                <span>Created by: {{quote.createdBy}}</span>
+                <div>{{quote.date | dateAgo}}</div>
+                <div class='icon'>
+                    <span class="fa fa-thumbs-up" (click)="upVote(i)">{{quote.upVotes}}</span>
+                    <span class="fa fa-thumbs-down" (click)="downVote(i)">{{quote.downVotes}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+    <app-quotes-form  (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
