@@ -14,8 +14,8 @@ export class QuotesComponent implements OnInit, OnChanges {
   quotes: Quote[] = [
     new Quote("Cricket civilises people and creates good gentlemen. I want everyone to play cricket in Zimbabwe; I want ours to be a nation of gentlemen.", 'Robert Mugabe', new Date('2020, 03, 30'), 'john', 0, 0),
     new Quote("Live as if you were to die tomorrow. Learn as if you were to live forever.", 'Mahatma Gandhi', new Date('2020, 31, 03'), 'George', 0, 0),
-    new Quote("And I ask why am I black, they say I was born in sin, and shamed inequity. One of the main songs we used to sing in church makes me sick, 'love wash me and I shall be whiter than snow.", 'Peter Tosh', new Date('2020, 03, 1'), 'john', 0, 0),
-    new Quote("I freed a thousand slaves I could have freed a thousand more if only they knew they were slaves.", 'Harriet Tubman', new Date('2019, 10, 12'), 'john', 0, 0)
+    new Quote("Whatever you are, be a good one.", 'Abraham Lincoln', new Date('2020, 03, 1'), 'George', 0, 0),
+    new Quote("My Best Friend is a person who will give me a book I have not read.", 'Abraham Lincoln', new Date('2020, 29, 03'), 'George', 0, 0)
 
   ];
 

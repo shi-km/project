@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -21,4 +21,4 @@ export class QuotesFormComponent implements OnInit {
   ngOnInit() {
   }
 
-}
+} 
